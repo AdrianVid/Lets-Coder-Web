@@ -98,7 +98,7 @@ main {
 footer {
   width: 100%;
   padding: 0 10px;
-  background-image: url(../Recursos/images/footer22.jpg);
+  background-image: url(/images/footer22.jpg);
   background-size: contain;
   margin: auto;
 }
@@ -270,12 +270,15 @@ tr:hover td {
 }
 .listas {
   display: flex;
-  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 0px;
   padding: 10px;
   font-size: 25px;
 }
 .lista {
   display: inline-block;
+
   padding: 10px;
 }
 .nombre__lista {
@@ -297,4 +300,20 @@ ul {
 dt {
   padding-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.informacion__personal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: inherit;
+}
+.tipo__datos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
+}
+.dato__formulario {
+  padding: 10px;
+  font-size: 20px;
 }
