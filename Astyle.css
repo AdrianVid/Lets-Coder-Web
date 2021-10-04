@@ -271,7 +271,7 @@ tr:hover td {
 .listas {
   display: flex;
   margin: 20px;
-  padding: 50px;
+  padding: 10px;
   font-size: 25px;
 }
 .lista {
@@ -285,20 +285,16 @@ tr:hover td {
 }
 li {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 2px solid black;
   background-color: rgb(147, 164, 197);
-  padding: 10px;
-  margin: 50px;
+  margin: 30px;
 }
 ul {
+  margin: 20 px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
+  border: 2px solid black;
 }
 dt {
   padding-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-dl {
-  padding: 10px;
-  margin: 10px;
 }
