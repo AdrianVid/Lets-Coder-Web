@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Primay-color: #ad7f7a;
+}
+header {
+  background-color: rgb(147, 164, 197);
+}
+nav {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 25px;
+  padding-right: 100px;
+  background-color: rgb(209, 209, 209);
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: darkblue;
+  padding-left: 30px;
+}
+nav a:hover {
+  background-color: rgb(93, 93, 100);
+}
+.logo {
+  width: 300px;
+  height: auto;
+  padding: 30px;
+}
+.subtitulos {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  background-color: rgb(147, 164, 197);
+  margin: 0px 200px;
+  color: rgb(56, 56, 56);
+}
+main {
+  background-color: rgb(73, 73, 158);
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.cursos {
+  display: flex;
+  justify-content: space-around;
+}
+.curso {
+  height: auto;
+  width: 20%;
+  border: 2px solid rgb(3, 3, 3);
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(147, 164, 197);
+  border-radius: 16px;
+  padding: 20px 38px;
+  margin: 50px;
+}
+.curso__boton {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  border: none;
+  color: rgb(3, 3, 3);
+  padding: 22px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.curso__boton:hover {
+  background-color: rgb(221, 169, 0);
+}
+.curso__fecha {
+  margin-bottom: 20px;
+  border-bottom: 5px solid rgb(85, 56, 12);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.curso__modalidad {
+  margin-bottom: 20px;
+  border-bottom: 5px solid rgb(85, 56, 12);
+  font-family: "Courier New", Courier, monospace;
+}
+.curso__lugar {
+  margin-bottom: 20px;
+  border-bottom: 5px solid rgb(85, 56, 12);
+  font-family: "Courier New", Courier, monospace;
+}
+footer {
+  width: 100%;
+  padding: 0 10px;
+  background-image: url(../Recursos/images/footer22.jpg);
+  background-size: contain;
+  margin: auto;
+}
+.logo__footer {
+  height: auto;
+  width: 150px;
+  margin: 8px;
+  padding: 0;
+}
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: baseline;
+}
+
+div > a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  color: gray;
+}
+.descripcion {
+  width: 350px;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 6px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 20px 20px 40px 220px;
+
+  color: rgb(32, 29, 29);
+  display: inline-block;
+}
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 300px;
+}
+.datos__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 210px;
+}
+.telefono {
+  padding: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgb(147, 164, 197);
+  margin: 40px;
+  color: rgb(56, 56, 56);
+  display: inline-block;
+}
+.telefono:hover {
+  transform: translateY(0) scale(1.2);
+}
+.e-mail {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  background-color: rgb(147, 164, 197);
+  margin: 40px;
+  color: rgb(56, 56, 56);
+  display: inline-block;
+}
+
+.e-mail:hover {
+  transform: translateY(0) scale(1.2);
+}
+.conocenos {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px;
+  margin: 20px 50px;
+  color: rgb(197, 196, 196);
+  border-bottom: 20px solid rgb(85, 56, 12);
+}
+.mentores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mentor {
+  display: flex;
+  padding: 40px;
+  border-bottom: 10px solid rgb(85, 56, 12);
+}
+.mentor__imagen {
+  margin-left: 50px;
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+.mentor__descripcion {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  text-transform: uppercase;
+
+  margin: 20px 230px;
+  color: rgb(31, 28, 28);
+}
+table {
+  text-align: center;
+  margin: 80px auto;
+  font-size: 20px;
+  border: 2px solid black;
+}
+.tabla {
+  height: 450px;
+  width: auto;
+  align-content: center;
+}
+.table {
+  width: 100%;
+  border-collapse: separate;
+  background-color: rgb(139, 84, 8);
+}
+th {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: rgb(110, 73, 17);
+}
+td {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(39, 35, 35);
+  border: 2px solid black;
+  background-color: rgb(147, 164, 197);
+  padding: 20px;
+}
+td:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+td:last-child {
+  font-family: serif;
+}
+td:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+}
+td:nth-child(5) {
+  text-transform: uppercase;
+}
+tr:hover td {
+  background-color: rgb(221, 169, 0);
+}
+.listas {
+  display: flex;
+  margin: 20px;
+  padding: 50px;
+  font-size: 25px;
+}
+.lista {
+  display: inline-block;
+  padding: 10px;
+}
+.nombre__lista {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 5px solid rgb(110, 73, 17);
+}
+li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid black;
+  background-color: rgb(147, 164, 197);
+  padding: 10px;
+  margin: 50px;
+}
+ul {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+dt {
+  padding-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+dl {
+  padding: 10px;
+  margin: 10px;
+}
