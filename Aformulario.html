@@ -19,88 +19,150 @@
         <nav class="navegador">
           <a href="./Ahome.html">Home </a>
           <a href="./Aconocenos.html"> Conocenos </a>
-          <a href="./test.html">Info</a>
+          <a href="./Ainfo.html">Info</a>
+          <a href="./Aformulario.html">Formulario</a>
           <a href="./Acontacto.html">Contacto</a>
         </nav>
       </div>
     </header>
-<body>
+
     <main>
+      <form action="./Acontacto.html" method="post">
+      <div class="informacion__personal">
+        <fieldset>
+        <h3 class="titulo__datos">Informacion personal</h3>
+        
+          <div class="tipo__datos">
+            <label for="nombre" class="dato__formulario" required>Nombre</label>
+            <input type="text" id="nombre" />
+            <label for="apellido" class="dato__formulario" required
+              >Apellidos</label
+            >
+            <input type="text" id="apellido" />
+          </div>
+          <div class="tipo__datos">
+            <label for="edad" class="dato__formulario">Edad</label>
+            <input type="number" id="edad" />
+            <label for="" class="dato__formulario">Genero</label>
 
-        <div class="informacion__personal">
-    <h3 class="titulo__datos">Informacion personal</h3>
-    <div class="tipo__datos">
-        <p class="dato__formulario">Nombre</p>
-        <input type="text">
-        <p class="dato__formulario">Apellidos</p>
-    <input type="text">
-</div>
-    <div class="tipo__datos">
-        <p class="dato__formulario">Edad</p>
-        <input type="numer">
-        <p class="dato__formulario">Genero</p>
-    <input type="radio"><p class="dato__formulario">Masculino</p>
-    <input type="radio"><p class="dato__formulario">Femenino</p>
-    <input type="radio"><p class="dato__formulario">Otro</p>
-</div>
-    <div class="tipo__datos">
-        <p class="dato__formulario">Poblacion</p>
-        <input type="text">
-        <p class="dato__formulario">CP</p>
-    <input type="numer">
-    <p class="dato__formulario">Telefono</p>
-    <input type="tel">
-</div>
-    <div class="tipo__datos">
-        <p class="dato__formulario">Email</p>
-        <input type="email"></div>
-</div>
+            <input type="radio" id="masculino" name="sexo" />
+            <label for="masculino" class="dato__formulario">Masculino</label>
 
+            <input type="radio" id="femenino" name="sexo" />
+            <label for="femenino" class="dato__formulario">Femenino</label>
 
+            <input type="radio" id="otro" name="sexo" />
+            <label for="otro" class="dato__formulario">Otro</label>
+          </div>
+          <div class="tipo__datos">
+            <label for="poblacion" class="dato__formulario" required
+              >Poblacion</label
+            >
+            <input type="text" id="poblacion" />
+            <label for="cp" class="dato__formulario" required>CP</label>
+            <input type="number" id="label" />
+            <label for="telefono" class="dato__formulario" required
+              >Telefono</label
+            >
+            <input type="tel" id="telefono" />
+          </div>
+          <div class="tipo__datos">
+            <label for="email" class="dato__formulario" required>Email</label>
+            <input type="email" id="email" />
+            <label for="pasword" class="dato__formulario" required>Contraseña</label>
+            <input type="password" id="pasword" name="pasword">
 
+          </div>
+        </fieldset>
+      </div>
 
+      <div class="informacion__curso">
+        <fieldset>
+        <h3 class="titulo__datos">Informacion del curso</h3>
+        
+          <div class="tipo__datos">
+          <label for="modelo" class="dato__formulario">Tipo de curso</label>
+          <select name="tipos" id="modelo" value="">
+            <option>Full-time online</option>
+            <option>Part-time online</option>
+            <option>Full-time presencial</option>
+            <option>Part-time presencial</option>
+          </select>
 
+          <label for="ciudad" class="dato__formulario">Ciudad</label>
+          <input type="text" id="ciudad" />
 
+          <label for="fecha" class="dato__formulario">Fecha</label>
+          <input type="date" id="fecha" /><br /><br />
+        </div>
+        <div class="tipo__datos">
+          <label for="herramientas" class="dato__formulario"
+            >Conocimientos previos</label
+          >
+          <input type="checkbox" id="herramienta1" name="herramientas" />
+          <label for="herramienta1" class="dato__formulario"> HTML</label>
+          <input type="checkbox" id="herramienta2" name="herramientas" />
+          <label for="herramienta2" class="dato__formulario"> CSS</label>
+          <input type="checkbox" id="herramienta3" name="herramientas" />
+          <label for="herramienta3" class="dato__formulario"> Javascript</label>
+          <input type="checkbox" id="herramienta4" name="herramientas" />
+          <label for="herramienta4" class="dato__formulario"> Otros</label>
+        </div>
+      </div>
 
+      <div class="comentarios">
+        <h3 class="titulo__datos">Comentarios</h3>
+        <div class="clase__dato">
+          <label class="dato__formulario" for="msg">Mensaje:</label>
+          <textarea id="msg" name="user_message">
+          Déjanos un comentario con tus dudas o recomendaciones....</textarea
+          >
+        </div>
+        <div class="enviar">
+          <input type="submit" class="dato__formulario" value="Enviar" />
+        </div>
+      </div>
+    </fieldset>
+    </form>
     </main>
+
     <footer>
-        <div class="container__footer">
-          <div class="box__footer">
-            <div class="logo__footer">
-              <img
-                class="logo__footer"
-                src="/images/letscoder-square.jpeg"
-                alt="logo Let´s Coder"
-              />
-            </div>
-          </div>
-          <div class="box__footer">
-            <h3>Contacto</h3>
-            <a href="#"><i class="fas fa-address-card"></i>Telefono</a>
-            <a href="#"><i class="fas fa-at"></i>E-mail</a>
-            <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
-          </div>
-          <div class="box__footer">
-            <h3>Preguntas frecuentes</h3>
-            <a href="#">¿Cuanto vale el curso?</a>
-            <a href="#">¿Quien imparte las clases?</a>
-            <a href="#">¿Necesito tener formacion previa?</a>
-          </div>
-          <div class="box__footer">
-            <h3>Enlaces</h3>
-            <a href="#">Home</a>
-            <a href="#">Conócenos</a>
-            <a href="#">Trabaja con nosotros</a>
-            <a href="#">Contacto</a>
+      <div class="container__footer">
+        <div class="box__footer">
+          <div class="logo__footer">
+            <img
+              class="logo__footer"
+              src="/images/letscoder-square.jpeg"
+              alt="logo Let´s Coder"
+            />
           </div>
         </div>
-      </footer>
-  
-      <script
-        src="https://kit.fontawesome.com/49f678c141.js"
-        crossorigin="anonymous"
-      ></script>
-    </body>
+        <div class="box__footer">
+          <h3>Contacto</h3>
+          <a href="#"><i class="fas fa-address-card"></i>Telefono</a>
+          <a href="#"><i class="fas fa-at"></i>E-mail</a>
+          <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+          <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+        </div>
+        <div class="box__footer">
+          <h3>Preguntas frecuentes</h3>
+          <a href="#">¿Cuanto vale el curso?</a>
+          <a href="#">¿Quien imparte las clases?</a>
+          <a href="#">¿Necesito tener formacion previa?</a>
+        </div>
+        <div class="box__footer">
+          <h3>Enlaces</h3>
+          <a href="#">Home</a>
+          <a href="#">Conócenos</a>
+          <a href="#">Trabaja con nosotros</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+    </footer>
 
+    <script
+      src="https://kit.fontawesome.com/49f678c141.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

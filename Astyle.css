@@ -223,9 +223,9 @@ div > a {
 }
 table {
   text-align: center;
-  margin: 80px auto;
+  margin: 40px auto;
   font-size: 20px;
-  border: 2px solid black;
+  border: 2px solid rgb(17, 17, 17);
 }
 .tabla {
   height: 450px;
@@ -240,7 +240,7 @@ table {
 th {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 2px solid black;
+  border: 2px solid rgb(26, 25, 25);
   padding: 20px;
   background-color: rgb(110, 73, 17);
 }
@@ -248,7 +248,7 @@ td {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
   color: rgb(39, 35, 35);
-  border: 2px solid black;
+  border: 2px solid rgb(26, 24, 24);
   background-color: rgb(147, 164, 197);
   padding: 20px;
 }
@@ -278,28 +278,49 @@ tr:hover td {
 }
 .lista {
   display: inline-block;
-
   padding: 10px;
+  margin: 20px;
+  text-align: center;
 }
 .nombre__lista {
   font-size: 30px;
+  display: inline-block;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border-bottom: 5px solid rgb(110, 73, 17);
 }
 li {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: rgb(147, 164, 197);
-  margin: 30px;
+  margin: 10px;
+  padding: 10px;
 }
 ul {
   margin: 20 px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  border: 2px solid black;
 }
 dt {
+  margin-top: 10px;
   padding-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(15, 15, 15);
+}
+dd {
+  padding: 10px;
+  width: 40%;
+  margin: auto;
+}
+form {
+  background-color: rgb(147, 164, 197);
+  width: 70%;
+  margin: auto;
+}
+.titulo__datos {
+  margin: 40px;
+  color: rgb(20, 20, 20);
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .informacion__personal {
   display: flex;
@@ -310,10 +331,34 @@ dt {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
+  margin: 10px;
   padding: 10px;
+  align-items: center;
 }
 .dato__formulario {
   padding: 10px;
   font-size: 20px;
+}
+input select {
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+}
+.informacion__curso {
+  display: flex;
+  flex-direction: column;
+}
+.comentarios {
+  text-align: center;
+}
+textarea {
+  width: 300px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  height: 5em;
+  text-align: left;
+}
+.enviar {
+  margin-top: 30px;
+  padding: 30px;
 }
