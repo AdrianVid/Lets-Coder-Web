@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 :root {
-  --Primay-color: #ad7f7a;
+  --Primay-color: rgb(147, 164, 197);
+  --Secundary-color: rgb(209, 209, 209);
+  --amarillo: rgb(221, 169, 0);
+  --marron: rgb(85, 56, 12);
+  --texto: rgb(31, 28, 28);
 }
 header {
-  background-color: rgb(147, 164, 197);
+  background-color: var(--Primay-color);
 }
 nav {
   padding: 10px;
@@ -16,7 +20,7 @@ nav {
   justify-content: flex-end;
   font-size: 25px;
   padding-right: 100px;
-  background-color: rgb(209, 209, 209);
+  background-color: var(--Secundary-color);
 }
 nav a {
   padding: 10px;
@@ -37,7 +41,7 @@ nav a:hover {
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
-  background-color: rgb(147, 164, 197);
+  background-color: var(--Primay-color);
   margin: 0px 200px;
   color: rgb(56, 56, 56);
 }
@@ -56,21 +60,18 @@ main {
   width: 20%;
   border: 2px solid rgb(3, 3, 3);
   font-size: 30px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(147, 164, 197);
+  color: var(--texto);
+  background-color: var(--Primay-color);
   border-radius: 16px;
   padding: 20px 38px;
   margin: 50px;
 }
 .curso__boton {
-  background-color: rgb(247, 247, 247);
+  background-color: var(--Secundary-color);
   width: 100%;
   border: none;
-  color: rgb(3, 3, 3);
+  color: var(--texto);
   padding: 22px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 18px;
   margin-bottom: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -78,22 +79,35 @@ main {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .curso__boton:hover {
-  background-color: rgb(221, 169, 0);
+  background-color: var(--amarillo);
 }
 .curso__fecha {
-  margin-bottom: 20px;
-  border-bottom: 5px solid rgb(85, 56, 12);
+  margin: 20px;
+
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
 }
 .curso__modalidad {
   margin-bottom: 20px;
-  border-bottom: 5px solid rgb(85, 56, 12);
+  border-bottom: 5px solid var(--marron);
   font-family: "Courier New", Courier, monospace;
 }
 .curso__lugar {
   margin-bottom: 20px;
-  border-bottom: 5px solid rgb(85, 56, 12);
+  border-bottom: 5px solid var(--marron);
   font-family: "Courier New", Courier, monospace;
+}
+.home__imagen {
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+.bootcamp__home {
+  margin: 40px auto;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+  opacity: 0.8;
 }
 footer {
   width: 100%;
@@ -121,7 +135,6 @@ footer {
   padding: 5px;
   align-items: baseline;
 }
-
 div > a {
   text-decoration: none;
   padding: 10px;
@@ -129,23 +142,32 @@ div > a {
   border: none;
   color: gray;
 }
+.pagina__contacto {
+  display: flex;
+  height: 600px;
+}
+.imagen__recepcion {
+  width: 550px;
+  height: auto;
+  margin: 150px 100px;
+  opacity: 0.8;
+}
 .descripcion {
   width: 350px;
   height: auto;
   text-align: center;
   padding: 30px;
   font-size: 30px;
-  border-radius: 6px;
+  border-radius: 14px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  margin: 20px 20px 40px 220px;
-
-  color: rgb(32, 29, 29);
-  display: inline-block;
+  margin: 50px 60px;
+  color: var(--texto);
+  background-color: var(--Primay-color);
 }
 .contacto {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-content: center;
   height: 300px;
 }
@@ -153,18 +175,19 @@ div > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 210px;
+  margin: auto;
 }
 .telefono {
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   border-radius: 12px;
-  background-color: rgb(147, 164, 197);
-  margin: 40px;
-  color: rgb(56, 56, 56);
+  background-color: var(--Secundary-color);
+  margin: 30px;
+  color: var(--texto);
   display: inline-block;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .telefono:hover {
   transform: translateY(0) scale(1.2);
@@ -172,15 +195,15 @@ div > a {
 .e-mail {
   text-align: center;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
   border-radius: 12px;
-  background-color: rgb(147, 164, 197);
-  margin: 40px;
-  color: rgb(56, 56, 56);
+  background-color: var(--Secundary-color);
+  margin: 30px;
+  color: var(--texto);
   display: inline-block;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .e-mail:hover {
   transform: translateY(0) scale(1.2);
 }
@@ -190,19 +213,22 @@ div > a {
   padding-bottom: 15px;
   text-transform: uppercase;
   text-shadow: 1px 1px;
-  margin: 20px 50px;
+  margin: 50px 50px 10px 50px;
   color: rgb(197, 196, 196);
-  border-bottom: 20px solid rgb(85, 56, 12);
+  border-bottom: 20px solid var(--marron);
 }
 .mentores {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 30px;
 }
 .mentor {
   display: flex;
-  padding: 40px;
-  border-bottom: 10px solid rgb(85, 56, 12);
+  align-items: center;
+  margin: 40px 20px 20px 20px;
+  padding: 20px;
+  border-bottom: 10px solid var(--marron);
 }
 .mentor__imagen {
   margin-left: 50px;
@@ -212,14 +238,15 @@ div > a {
 }
 .mentor__descripcion {
   padding: 10px;
+  width: 80%;
   text-align: center;
   font-size: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
   text-transform: uppercase;
-
-  margin: 20px 230px;
-  color: rgb(31, 28, 28);
+  margin: 20px auto;
+  color: var(--texto);
+  background-color: var(--Primay-color);
+  border-radius: 10px;
 }
 table {
   text-align: center;
@@ -235,21 +262,22 @@ table {
 .table {
   width: 100%;
   border-collapse: separate;
-  background-color: rgb(139, 84, 8);
+  background-color: var(--marron);
 }
 th {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 2px solid rgb(26, 25, 25);
   padding: 20px;
-  background-color: rgb(110, 73, 17);
+  background-color: var(--marron);
+  color: var(--texto);
 }
 td {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(39, 35, 35);
+  color: var(--texto);
   border: 2px solid rgb(26, 24, 24);
-  background-color: rgb(147, 164, 197);
+  background-color: var(--Primay-color);
   padding: 20px;
 }
 td:first-child {
@@ -266,7 +294,7 @@ td:nth-child(5) {
   text-transform: uppercase;
 }
 tr:hover td {
-  background-color: rgb(221, 169, 0);
+  background-color: var(--amarillo);
 }
 .listas {
   display: flex;
@@ -275,10 +303,20 @@ tr:hover td {
   margin-left: 0px;
   padding: 10px;
   font-size: 25px;
+  color: var(--texto);
 }
 .lista {
   display: inline-block;
-  padding: 10px;
+  width: 30%;
+  padding: 10px 40px;
+  margin: 20px;
+  text-align: center;
+  background-color: var(--Primay-color);
+  border-radius: 12px;
+}
+.horario {
+  display: inline-block;
+  padding: 30px;
   margin: 20px;
   text-align: center;
 }
@@ -286,39 +324,56 @@ tr:hover td {
   font-size: 30px;
   display: inline-block;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border-bottom: 5px solid rgb(110, 73, 17);
+  border-bottom: 5px solid var(--marron);
+}
+th {
+  color: rgb(15, 15, 15);
 }
 li {
+  background-color: var(--Secundary-color);
+  border: solid var(--texto);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: rgb(147, 164, 197);
   margin: 10px;
   padding: 10px;
 }
 ul {
-  margin: 20 px;
+  margin: 20px;
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
 }
+dl {
+  margin: auto;
+  width: 60%;
+  border-radius: 12px;
+  background-color: var(--Primay-color);
+}
 dt {
   margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(15, 15, 15);
 }
 dd {
-  padding: 10px;
-  width: 40%;
+  padding: 20px;
+  width: 90%;
   margin: auto;
 }
 form {
-  background-color: rgb(147, 164, 197);
+  background-color: var(--Primay-color);
   width: 70%;
   margin: auto;
+  margin-top: 30px;
+}
+.formulario {
+  border: 4px solid var(--marron);
 }
 .titulo__datos {
   margin: 40px;
-  color: rgb(20, 20, 20);
-  font-size: 30px;
+  border-radius: 6px;
+  background-color: var(--Secundary-color);
+  color: var(--texto);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -330,20 +385,35 @@ form {
 .tipo__datos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
+  justify-content: flex-start;
+  width: 70%;
+  margin: auto;
+  padding: 10px 30px;
   align-items: center;
+  font-family: "Courier New", Courier, monospace;
 }
 .dato__formulario {
   padding: 10px;
   font-size: 20px;
 }
-input select {
-  width: fit-content;
-  height: fit-content;
-  align-items: center;
+.subdato__formulario {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
+.input__formulario {
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  width: max-content;
+  background-color: var(--Secundary-color);
+}
+.input__formulario:focus {
+  background-color: var(--Secundary-color);
+}
+
 .informacion__curso {
   display: flex;
   flex-direction: column;
@@ -352,13 +422,40 @@ input select {
   text-align: center;
 }
 textarea {
-  width: 300px;
+  width: 60%;
+  padding: 10px;
   box-sizing: border-box;
   vertical-align: middle;
   height: 5em;
   text-align: left;
+  background-color: var(--Secundary-color);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .enviar {
   margin-top: 30px;
   padding: 30px;
+}
+@media screen and(max-width: 768px) {
+  div .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(21, 22, 22);
+  }
+  .navegador {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .pagina__contacto {
+    width: 100%;
+    font-size: 15px;
+  }
+  .imagen__recepcion {
+    display: none;
+  }
 }

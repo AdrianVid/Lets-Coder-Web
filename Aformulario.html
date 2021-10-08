@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Let´s Coder</title>
+    <title>Let´s Coder</title>
     <link href="./Astyle.css" rel="stylesheet" />
   </head>
   <body>
@@ -20,110 +20,151 @@
           <a href="./Ahome.html">Home </a>
           <a href="./Aconocenos.html"> Conocenos </a>
           <a href="./Ainfo.html">Info</a>
-          <a href="./Aformulario.html">Formulario</a>
+          <a href="./Aformulario.html">Registro</a>
           <a href="./Acontacto.html">Contacto</a>
         </nav>
       </div>
     </header>
 
     <main>
+      <h2 class="subtitulos">Registrate</h2>
       <form action="./Acontacto.html" method="post">
-      <div class="informacion__personal">
-        <fieldset>
-        <h3 class="titulo__datos">Informacion personal</h3>
-        
-          <div class="tipo__datos">
-            <label for="nombre" class="dato__formulario" required>Nombre</label>
-            <input type="text" id="nombre" />
-            <label for="apellido" class="dato__formulario" required
-              >Apellidos</label
-            >
-            <input type="text" id="apellido" />
+        <div class="formulario">
+          <div class="informacion__personal">
+            <h3 class="titulo__datos">Informacion personal</h3>
+
+            <div class="tipo__datos">
+              <label for="nombre" class="dato__formulario">Nombre</label>
+              <input
+                class="input__formulario"
+                type="text"
+                id="nombre"
+                placeholder="Nombre"
+              />
+              <input
+                class="input__formulario"
+                type="text"
+                id="apellido"
+                placeholder="Apellidos"
+              />
+            </div>
+            <div class="tipo__datos">
+              <label class="dato__formulario">Genero</label>
+              <input type="radio" id="masculino" name="sexo" />
+              <label for="masculino" class="subdato__formulario"
+                >Masculino</label
+              >
+              <input type="radio" id="femenino" name="sexo" />
+              <label for="femenino" class="subdato__formulario">Femenino</label>
+              <input type="radio" id="otro" name="sexo" />
+              <label for="otro" class="subdato__formulario">Otro</label>
+            </div>
+            <div class="tipo__datos">
+              <label for="poblacion" class="dato__formulario">Poblacion</label>
+              <input
+                class="input__formulario"
+                type="text"
+                id="poblacion"
+                placeholder="Poblacion"
+              />
+              <input
+                class="input__formulario"
+                type="text"
+                id="cp"
+                placeholder="Codigo Postal"
+              />
+            </div>
+            <div class="tipo__datos">
+              <label for="edad" class="dato__formulario"
+                >Fecha de nacimiento</label
+              >
+              <input class="input__formulario" type="date" id="edad" />
+            </div>
+            <div class="tipo__datos">
+              <label for="telefono" class="dato__formulario">Telefono</label>
+              <input
+                class="input__formulario"
+                type="tel"
+                id="telefono"
+                placeholder="000-000-000"
+              />
+            </div>
+            <div class="tipo__datos">
+              <label for="email" class="dato__formulario">Email</label>
+              <input
+                class="input__formulario"
+                type="email"
+                id="email"
+                placeholder="ejemplo@xxxx.com"
+              />
+              <label for="pasword" class="dato__formulario">Contraseña</label>
+              <input
+                class="input__formulario"
+                type="password"
+                id="pasword"
+                name="pasword"
+                placeholder="Min 6 carateres"
+              />
+            </div>
           </div>
-          <div class="tipo__datos">
-            <label for="edad" class="dato__formulario">Edad</label>
-            <input type="number" id="edad" />
-            <label for="" class="dato__formulario">Genero</label>
+          <div class="informacion__curso">
+            <h3 class="titulo__datos">Informacion del curso</h3>
 
-            <input type="radio" id="masculino" name="sexo" />
-            <label for="masculino" class="dato__formulario">Masculino</label>
-
-            <input type="radio" id="femenino" name="sexo" />
-            <label for="femenino" class="dato__formulario">Femenino</label>
-
-            <input type="radio" id="otro" name="sexo" />
-            <label for="otro" class="dato__formulario">Otro</label>
+            <div class="tipo__datos">
+              <label for="modelo" class="dato__formulario">Tipo de curso</label>
+              <select class="input__formulario" name="tipos" id="modelo">
+                <option>Full-time online</option>
+                <option>Part-time online</option>
+                <option>Full-time presencial</option>
+                <option>Part-time presencial</option>
+              </select>
+            </div>
+            <div class="tipo__datos">
+              <label for="ciudad" class="dato__formulario">Ciudad</label>
+              <input
+                class="input__formulario"
+                type="text"
+                id="ciudad"
+                placeholder="En caso de ser presencial.."
+              />
+              <label for="fecha" class="dato__formulario">Fecha</label>
+              <select class="input__formulario" name="tipos" id="modelo">
+                <option>25/09/2021</option>
+                <option>28/01/2022</option>
+                <option>03/03/2022</option>
+              </select>
+            </div>
+            <div class="tipo__datos">
+              <label class="dato__formulario">Conocimientos previos</label>
+              <input type="checkbox" id="herramienta1" name="herramientas" />
+              <label for="herramienta1" class="subdato__formulario">
+                HTML</label
+              >
+              <input type="checkbox" id="herramienta2" name="herramientas" />
+              <label for="herramienta2" class="subdato__formulario"> CSS</label>
+              <input type="checkbox" id="herramienta3" name="herramientas" />
+              <label for="herramienta3" class="subdato__formulario">
+                Javascript</label
+              >
+            </div>
           </div>
-          <div class="tipo__datos">
-            <label for="poblacion" class="dato__formulario" required
-              >Poblacion</label
-            >
-            <input type="text" id="poblacion" />
-            <label for="cp" class="dato__formulario" required>CP</label>
-            <input type="number" id="label" />
-            <label for="telefono" class="dato__formulario" required
-              >Telefono</label
-            >
-            <input type="tel" id="telefono" />
+          <div class="comentarios">
+            <h3 class="titulo__datos">Comentarios</h3>
+
+            <div class="tipo__datos">
+              <label class="dato__formulario" for="msg">Escríbenos:</label>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Déjanos un comentario o preguntanos las dudas que puedas tener..."
+              ></textarea>
+            </div>
+            <div class="enviar">
+              <input type="submit" class="dato__formulario" value="Enviar" />
+            </div>
           </div>
-          <div class="tipo__datos">
-            <label for="email" class="dato__formulario" required>Email</label>
-            <input type="email" id="email" />
-            <label for="pasword" class="dato__formulario" required>Contraseña</label>
-            <input type="password" id="pasword" name="pasword">
-
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="informacion__curso">
-        <fieldset>
-        <h3 class="titulo__datos">Informacion del curso</h3>
-        
-          <div class="tipo__datos">
-          <label for="modelo" class="dato__formulario">Tipo de curso</label>
-          <select name="tipos" id="modelo" value="">
-            <option>Full-time online</option>
-            <option>Part-time online</option>
-            <option>Full-time presencial</option>
-            <option>Part-time presencial</option>
-          </select>
-
-          <label for="ciudad" class="dato__formulario">Ciudad</label>
-          <input type="text" id="ciudad" />
-
-          <label for="fecha" class="dato__formulario">Fecha</label>
-          <input type="date" id="fecha" /><br /><br />
         </div>
-        <div class="tipo__datos">
-          <label for="herramientas" class="dato__formulario"
-            >Conocimientos previos</label
-          >
-          <input type="checkbox" id="herramienta1" name="herramientas" />
-          <label for="herramienta1" class="dato__formulario"> HTML</label>
-          <input type="checkbox" id="herramienta2" name="herramientas" />
-          <label for="herramienta2" class="dato__formulario"> CSS</label>
-          <input type="checkbox" id="herramienta3" name="herramientas" />
-          <label for="herramienta3" class="dato__formulario"> Javascript</label>
-          <input type="checkbox" id="herramienta4" name="herramientas" />
-          <label for="herramienta4" class="dato__formulario"> Otros</label>
-        </div>
-      </div>
-
-      <div class="comentarios">
-        <h3 class="titulo__datos">Comentarios</h3>
-        <div class="clase__dato">
-          <label class="dato__formulario" for="msg">Mensaje:</label>
-          <textarea id="msg" name="user_message">
-          Déjanos un comentario con tus dudas o recomendaciones....</textarea
-          >
-        </div>
-        <div class="enviar">
-          <input type="submit" class="dato__formulario" value="Enviar" />
-        </div>
-      </div>
-    </fieldset>
-    </form>
+      </form>
     </main>
 
     <footer>
