@@ -241,8 +241,7 @@ div > a {
   width: 80%;
   text-align: center;
   font-size: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
+
   margin: 20px auto;
   color: var(--texto);
   background-color: var(--Primay-color);
@@ -388,12 +387,25 @@ form {
   justify-content: flex-start;
   width: 70%;
   margin: auto;
-  padding: 10px 30px;
+  padding: 15px 30px;
   align-items: center;
   font-family: "Courier New", Courier, monospace;
 }
 .dato__formulario {
   padding: 10px;
+  font-size: 20px;
+}
+.genero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-around;
+  align-items: flex-start;
+}
+.fecha__genero {
+  display: flex;
+  width: 70%;
+  margin: auto;
   font-size: 20px;
 }
 .subdato__formulario {
@@ -402,6 +414,11 @@ form {
   font-size: 15px;
   text-transform: uppercase;
 }
+.informacion {
+  display: flex;
+  justify-content: space-between;
+}
+
 .input__formulario {
   height: 30px;
   padding: 5px;
@@ -413,6 +430,9 @@ form {
 .input__formulario:focus {
   background-color: var(--Secundary-color);
 }
+.input__nombre {
+  width: 48%;
+}
 
 .informacion__curso {
   display: flex;
@@ -422,11 +442,9 @@ form {
   text-align: center;
 }
 textarea {
-  width: 60%;
+  width: 100%;
   padding: 10px;
-  box-sizing: border-box;
-  vertical-align: middle;
-  height: 5em;
+  height: 8em;
   text-align: left;
   background-color: var(--Secundary-color);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
